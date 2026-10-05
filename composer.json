@@ -1,0 +1,51 @@
+{
+    "name": "tyhpdef/league-commonmark-impl",
+    "description": "Implementation package for tyhpdef/league-commonmark. Require tyhpdef/league-commonmark, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "2.10.1.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/psr-event-dispatcher": "@dev",
+                "tyhpdef/league-config": "@dev",
+                "tyhpdef/dflydev-dot-access-data": "@dev",
+                "tyhpdef/nette-schema": "@dev",
+                "tyhpdef/nette-utils": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/league-commonmark"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "league/commonmark": "2.10.1"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/psr-event-dispatcher": "@dev",
+        "tyhpdef/league-config": "@dev",
+        "tyhpdef/dflydev-dot-access-data": "@dev",
+        "tyhpdef/nette-schema": "@dev",
+        "tyhpdef/nette-utils": "@dev"
+    }
+}
